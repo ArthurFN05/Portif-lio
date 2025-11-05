@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Arthur Ferraz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botão Modo Claro/Escuro -->
+    <button id="darkModeToggle">🌙</button>
+
+    <!-- Navbar -->
+    <nav>
+        <ul  class="nav">
+            <li><a href="_Curriculo Arthur Ferraz Nascimento (1).pdf">Curriculo</a></li>
+            <li><a href="#about">Quem eu sou?</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Apresentação -->
+    <header id="about">
+        <h1 id="typing-text"></h1>
+        <p>Aluno do Cotemig</p>
+        <div class="intro">
+            <img src="Screenshot_20250926-150027~2.png" alt="Foto do Arthur">
+            <p>
+                Olá, me chamo Arthur Ferraz Nascimento, tenho 16 anos, sou aluno do Cotemig,
+                estou cursando o segundo ano do ensino médio. Tenho conhecimentos sólidos em HTML, CSS, MySQL, 
+                familiaridade em C# e algumas habilidades de hardware.
+            </p>
+        </div>
+    </header>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <div class="section"><h2>-Habilidades</h2></div>
+        <section class="skills">
+       
+    <div class="card" data-skill="HTML">
+      <img src="html.png" alt="HTML" onclick="openModal('HTML é a linguagem usada para estruturar páginas web.')">
+      <p>HTML</p>
+    </div>
+    <div class="card" data-skill="CSS">
+      <img src="css-3.png" alt="CSS" onclick="openModal('CSS define o estilo e aparência de sites e aplicativos web.')">
+      <p>CSS</p>
+    </div>
+    <div class="card" data-skill="JavaScript">
+      <img src="java-script.png" alt="JavaScript" onclick="openModal('JavaScript adiciona interatividade e lógica às páginas.')">
+      <p>JavaScript</p>
+    </div>
+    <div class="card" data-skill="C#">
+      <img src="c-logo.png" alt="C#" onclick="openModal('C# é uma linguagem de programação moderna e versátil da Microsoft.')">
+      <p>C#</p>
+    </div>
+    <div class="card" data-skill="MySQL">
+      <img src="mysql.png" alt="MySQL" onclick="openModal('MySQL é um sistema de gerenciamento de banco de dados relacional.')">
+      <p>MySQL</p>
+    </div>
+    <div class="card" data-skill="GitHub">
+      <img src="github.png" alt="GitHub" onclick="openModal('GitHub é uma plataforma para versionamento e colaboração em código.')">
+      <p>GitHub</p>
+    </div>
+    <div class="card" data-skill="Figma">
+      <img src="figma.png" alt="Figma" onclick="openModal('Figma é uma ferramenta de design colaborativa baseada na nuvem.')">
+      <p>Figma</p>
+    </div>
+    <div class="card" data-skill="Pacote Office">
+      <img src="office.png" alt="Pacote Office"
+      onclick="openModal('Pacote Office inclui ferramentas como Word, Excel e PowerPoint.')">
+      <p>Pacote Office</p>
+    </div>
+    <div class="card" data-skill="Hardware">
+      <img src="chip.png" alt="Hardware"
+      onclick="openModal('Hardware envolve os componentes físicos do computador.')">
+       
+      <p>Hardware</p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="SkillModal" class="modal1">
+        <div class="modal-content1">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text1"></p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects">
+        <div class="section"><h2>-Projetos</h2></div>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="tulen.png" class="imgscarousel" alt="...">
+              <p id="textCarrosel">Esse é o projeto Tulen é uma replica de um site em andamento</p>
+            </div>
+            <div class="carousel-item">
+              <img src="belara.png" class="imgscarousel" alt="...">
+              <p id="textCarrosel">Esse é o projeto Belara é uma replica de um site em feita por mim</p>
+            </div>
+            <div class="carousel-item">
+              <img src="bitmap.png" class="imgscarousel" alt="...">
+              <p id="textCarrosel">Esse é o projeto Bitmap é uma replica de um site em feita por mim</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <a class="git" href="https://github.com/ArthurFN05?tab=repositories" target="_blank"><img class="img" src="github.png" alt=""><p>Ver mais no GitHub</p></a>
+    </section>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <section id="contact">
+        <div class="section"><h2>-Contato</h2></div>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Nome" required>
+             <input type="text"id="telefone" oninput="mascara_telefone()"
+             placeholder="(31)99999-9999">
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Arthur Ferraz Nascimento ©2025</p>
+        <p>Contato: arthurferraznascimento42@gmail.com | +55 31 92008-6386</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

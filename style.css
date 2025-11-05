@@ -1,0 +1,228 @@
+/* ===== Reset e base ===== */
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; }
+/* ===== Responsivo ===== */
+@media(max-width:768px){
+    nav ul { flex-direction:column; }
+    .skills-grid, .project-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media(max-width:480px){
+    .skills-grid, .project-grid { grid-template-columns: 1fr; }
+}
+    body { 
+    font-family:Roboto,monospace ;
+     background-color: #684A70; 
+     color:#fff; 
+     transition: all 0.5s; 
+     
+    }
+
+a { 
+    color: inherit; 
+    text-decoration:none; 
+}
+.nav{ display:flex;
+     gap:20px; 
+     list-style:none; 
+     justify-content:center; 
+     padding:15px;
+     height:60px; 
+     background:#440052; 
+
+}
+nav ul { display:flex;
+     gap:20px; 
+     list-style:none; 
+     justify-content:center; 
+     padding:15px;
+     height:60px; 
+     background:#440052; 
+    }
+nav ul li a:hover { 
+    text-decoration: underline; 
+}
+.section{
+    width: 100%;
+    height: 70px;
+    background-color: #440052;
+}
+
+/* ===== Botão dark mode ===== */
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+    background:#fff;
+    color:#000;
+    border-radius:5px;
+    z-index:1000;
+}
+
+
+/* ===== Header ===== */
+header { text-align:center; 
+    padding:50px 20px; 
+}
+header img { width:450px; 
+    border-radius:50%; 
+    margin-top:20px; 
+}
+.img{
+    margin: auto;
+    width: 120px;
+}
+.git{
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+/* ===== Skills ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+    
+.card {
+  background-color: #440052;
+  color: white;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 8px;
+}
+
+
+/* ===== Modal ===== */
+.modal { display:none; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,0.7); 
+    justify-content:center; 
+    align-items:center; 
+}
+.modal-content { background:#440052; 
+    color: white;
+    padding:30px; 
+    border-radius:10px; 
+    position:relative; 
+    text-align:center; 
+}
+.close { position:absolute; 
+    top:10px; 
+    right:15px; 
+    cursor:pointer; 
+    font-size:20px; 
+}
+
+/* ===== Form ===== */
+form { display:flex; 
+    flex-direction:column;
+    gap:10px; 
+    max-width:400px; 
+    margin:20px auto; 
+     
+}
+form input, form textarea, form button { 
+   
+    padding:10px; 
+    border-radius:5px; 
+    border:none; 
+}
+form button { 
+    background:#440052; 
+    color:#fff; 
+    cursor:pointer; 
+    transition:0.3s;
+ }
+form button:hover { 
+    background:#42234b; 
+}
+
+/* ===== Footer ===== */
+footer { text-align:center; 
+    padding:20px; 
+    background:#440052; 
+}
+
+/* ===== Dark Mode ===== */
+body.dark { background:#292525; 
+    color:#eee; 
+}
+body.dark .card{
+    background-color: rgb(66, 63, 63);
+    color: white;
+}
+body.dark .section{
+    background-color: rgb(66, 63, 63);
+    color: white;
+}
+body.dark footer{
+    background-color: rgb(66, 63, 63);
+    color: white;
+}
+body.dark .nav { background-color: rgb(66, 63, 63);
+    color: white;
+
+}
+body.dark .skill, body.dark .project  {
+     background:#440052; 
+    }
+body.dark form button { 
+    background:#111; 
+}
+h2{
+    padding:15px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+p{
+    font-size: 20px;
+}
+
+
+.carousel-inner { width: 70%;
+    margin: auto;
+height: 60vh;
+text-align: center;
+padding: 20px;
+
+}
+
+.imgscarousel { width: 80%;
+height: 100%;
+object-fit: contain;
+}
+
+.carousel-item { 
+    height: 50vh;
+}
+#textCarrosel{
+    padding: 30px;
+}
